@@ -1,0 +1,213 @@
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+body {
+    background: rgb(241,246,239);
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hdr {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    margin-top: 25px;
+    font-family: Mochiy Pop One, sans-serif;
+}
+
+header img {
+    width: 100px;
+}
+
+header h1, header p {
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 0;
+    word-spacing: 2px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    grid-column-gap: 40px;
+    font-family: Rajdhani, sans-serif;
+    align-items: flex-start;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin-left: 40px;
+}
+
+.product__item {
+    width: 300px;
+    background: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    flex-direction: column;
+}
+
+.product__item button {
+    width: 200px;
+    height: 40px;
+    background: white;
+    border: 2px solid orange;
+    color: orange;
+    font-weight: 800;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.product__item button:hover {
+    background: orange;
+    color: white;
+}
+
+.cart {
+    width: 350px;
+    background: white;
+    border: 1px solid grey;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart__form {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.number {
+    width: 230px;
+    border-radius: 22px;
+    border: 1px solid grey;
+    text-align: center;
+    height: 30px;
+    outline: none;
+}
+
+.cart__form p {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.cart__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: 140px;
+    border-bottom: 1px solid grey;
+}
+
+
+.cart__main img {
+    width: 80px;
+}
+
+.order {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cart__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    width: 320px;
+    height: 200px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.description h2 {
+    margin-bottom: 10px;
+}
+
+.description p {
+    margin: 5px 0;
+}
+
+.price {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.description__sum {
+    background: wheat;
+    border-radius: 22px;
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.description__sum button {
+    background: wheat;
+    border: 0;
+    border-radius: 10px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contact__img img {
+    width: 35px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.contact__img img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.success {
+    border: 2px solid green;
+}
+
+.check {
+    display: none;
+    color: red;
+    font-weight: 800;
+}
+
